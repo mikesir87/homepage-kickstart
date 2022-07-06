@@ -2,7 +2,7 @@
 FROM klakegg/hugo:0.93.2-ubuntu
 
 # Configure Image
-RUN apt-get -y update && apt-get -y upgrade && \
+RUN apt-get -y update && \
     apt-get install -y bash curl && \
     curl -fsSL https://deb.nodesource.com/setup_14.x | bash - && \
     apt-get install -y nodejs && \
